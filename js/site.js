@@ -5,10 +5,6 @@ console.log(`Version: ${v}`);
 
 let navActive = false;
 
-/* Navbar variables */
-let navCon = document.getElementById("nav-container");
-let hamburger = document.getElementById("hamburger");
-
 /* Functions */
 function hashString(str) {
     return encodeURIComponent(str);
@@ -43,6 +39,13 @@ async function setActive() {
     let url = window.location.href; // currently unused
 }
 
+setActive().catch(console.log);
+
+/* Navbar variables */
+
+let navCon = document.getElementById("nav-container");
+let hamburger = document.getElementById("hamburger");
+
 /* Events & Run */
 
 window.addEventListener("resize", (event) => {
@@ -69,8 +72,6 @@ window.addEventListener('resize', () => {
 hamburger.addEventListener('mousedown', () => {
     toggleNav();
 });
-
-setActive().catch(console.log);
 
 function OnError(message) {
     let errObj = document.createElement("div");
