@@ -1,0 +1,210 @@
+#homepage-title {
+    position: fixed;
+    z-index: 7;
+    color: #ffffffcc;
+    width: 100vw;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    filter: hue-rotate(90deg);
+}
+
+#socials-title {
+    color:#ffffff;
+    font-size:25pt;
+    text-align:center;
+    width:100%;
+    font-weight:bold;
+    font-family:'Yanone Kaffeesatz', sans-serif;
+    margin:0;
+    margin-bottom:3vh;
+    /* filter: hue-rotate(90deg); */
+}
+
+#homepage-subtitle {
+    position: fixed;
+    z-index: 7;
+    color: #ffffffcc;
+    top: 10vh;
+    width: 50vw;
+    font-size: 2vh;
+    text-align: center;
+    left: 25vw;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    filter: hue-rotate(90deg);
+}
+
+#project-list {
+    position: fixed;
+    z-index: 5;
+    width: calc(var(--vw, 1vw) * 17);
+    left: calc(var(--vw, 1vw) * 5);
+    height: calc(var(--vh, 1vh) * 70);
+    top: calc(var(--vh, 1vh) * 20);
+    background-color: #31103b;
+    border-color: #b8b8b8;
+    border-style: solid;
+    border-radius: 20px;
+    overflow: hidden;
+    filter: hue-rotate(90deg);
+}
+
+#project-list-title {
+    position: relative;
+    width: 100%;
+    color: #ffffff;
+    height: 50px;
+    font-size: calc(var(--vwh, 1vh) * 4);
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin: 0;
+    padding: 0;
+    top: calc(var(--vwh, 1vh) * 2);
+    filter: hue-rotate(90deg);
+}
+
+#project-list-subtitle {
+    /* position: relative; */
+    width: 100%;
+    color: #ffffff;
+    height: 50px;
+    font-size: calc(var(--vwh, 1vh) * 2);
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: calc(var(--vwh, 1vh) * 3);
+}
+
+#project-flex {
+    display: flex;
+    flex-direction: column;
+    z-index: 7;
+    position: relative;
+    height: calc(var(--vh, 1vh) * 60);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    top: calc(var(--vh, 1vh) * 2);
+    filter: hue-rotate(90deg);
+}
+
+#project-legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin: 0;
+    padding: 0;
+    /* background-color: #0000007d; */
+    padding-bottom: calc(var(--vh, 1vh) * 7);
+    padding-top: calc(var(--vh, 1vh) * 2);
+    height: calc(var(--vh, 1vh) * 4);
+    margin-top: calc(var(--vh, 1vh) * 5);
+    filter: hue-rotate(90deg);
+}
+
+.project {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    background-color: #4e2859;
+    margin-bottom: calc(var(--vh, 1vh)*0.5);
+    padding-bottom: calc(var(--vh, 1vh) * 1);
+    border-color: #cccccc;
+    border-width: 1px;
+    border-style: solid;
+    filter: hue-rotate(-90deg)
+}
+
+
+.tooltip {
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: 125%;
+    z-index: 8;
+}
+
+.tooltip-text {
+    color: #cccccc;
+    text-align: left;
+    width: fit-content;
+    height: auto;
+    position: relative;
+    top: 120%;
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    padding-left: calc(var(--vw, 1vw)*1);
+    padding-right: calc(var(--vw, 1vw)*1);
+    background-color: #651675;
+    border-radius: 30px;
+    filter: hue-rotate(90deg);
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+
+
+/* Socials IDs and classes */
+
+#socials {
+    width: 30vw;
+    height: auto;
+    margin-left: 69vw;
+    margin-top: calc(var(--vwh, 1vh) * 2);
+    background-color: #36085f;
+    padding-top: calc(var(--vwh, 1vh) * 2);
+    padding-bottom: calc(var(--vwh, 1vh) * 2);
+    border-radius: 20px;
+    border-color: #ffffff7d;
+    border-style: solid;
+    /* filter: hue-rotate(90deg); */
+}
+
+.social_icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 0;
+    margin: 0;
+    margin-left: calc(var(--vwh, 1vh) * 2);
+    position: relative;
+    filter: hue-rotate(-90deg);
+    /* top: 10px; */
+}
+
+.social_text {
+    font-size: calc(var(--vwh, 1vh) * 2);
+    color: #ffffffcc;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding: 0;
+    margin: 0;
+    margin-left: calc(var(--vwh, 1vh) * 2);
+    position: relative;
+    /* bottom: calc(var(--vwh, 1vh) * 1); */
+    text-decoration: none;
+    /* filter: hue-rotate(90deg); */
+}
+
+.social_elem {
+    background-color: #652a837d;
+    border-radius: 20px;
+    height: calc(var(--vwh, 1vh) * 5);
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 75%;
+    position: relative;
+    left: 12.5%;
+    margin-bottom: calc(var(--vwh, 1vh) * 1.25);
+    /* filter: hue-rotate(90deg); */
+}
