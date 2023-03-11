@@ -3,9 +3,23 @@ let v = 1;
 const ERROR_LENGTH = 4 * 1000; // 4 seconds
 console.log(`Version: ${v}`);
 
+let navActive = false;
+
+/* Navbar variables */
+let navCon = document.getElementById("nav-container");
+
 /* Functions */
 function hashString(str) {
     return encodeURIComponent(str);
+}
+
+function toggleNav() {
+    navActive = !navActive;
+    if (navActive) {
+        navCon.id = "nav-container-active";
+    } else {
+        navCon.id = "nav-container";
+    }
 }
 
 async function main() {
