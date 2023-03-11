@@ -31,6 +31,7 @@ body {
     border-bottom-right-radius: 20px;
     
     position: fixed;
+    z-index: 99;
     left: calc(var(--vw,1vw) * -31);
     width: calc(var(--vw,1vw) * 30);
     height: calc(var(--vh, 1vh) * 100);
@@ -44,6 +45,7 @@ body {
     border-bottom-right-radius: 20px;
     
     position: fixed;
+    z-index: 99;
     left: calc(var(--vw,1vw) * 0);
     width: calc(var(--vw,1vw) * 30);
     height: calc(var(--vh, 1vh) * 100);
@@ -55,8 +57,8 @@ body {
     top: calc(var(--vh, 1vh) * 1);
     color: #1e2a70;
     
-    padding-top: calc(var(--vh, 1vh) * 2);
-    padding-bottom: calc(var(--vh, 1vh) * 2);
+    /*padding-top: calc(var(--vh, 1vh) * 2);
+    padding-bottom: calc(var(--vh, 1vh) * 2);*/
     width: fit-content;
     font-size: calc(var(--vwh, 1vh) * 4);
 }
