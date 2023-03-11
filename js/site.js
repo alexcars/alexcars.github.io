@@ -1,9 +1,14 @@
 /* Debugging version control */
-let v = 1;
+let v = 1.1;
 const ERROR_LENGTH = 4 * 1000; // 4 seconds
 console.log(`Version: ${v}`);
 
 let navActive = false;
+
+/* Navbar variables */
+
+let navCon;
+let hamburger;
 
 /* Functions */
 function hashString(str) {
@@ -35,16 +40,16 @@ async function main() {
 async function setActive() {
 
     await main().catch(console.log);
-
+    navCon = document.getElementById("nav-container");
+    hamburger = document.getElementById("hamburger");
+    hamburger.addEventListener('mousedown', () => {
+        toggleNav();
+    });
+    
     let url = window.location.href; // currently unused
 }
 
 setActive().catch(console.log);
-
-/* Navbar variables */
-
-let navCon = document.getElementById("nav-container");
-let hamburger = document.getElementById("hamburger");
 
 /* Events & Run */
 
@@ -67,10 +72,6 @@ window.addEventListener('resize', () => {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
     document.documentElement.style.setProperty('--vw', `${vw}px`);
     document.documentElement.style.setProperty('--vwh', `${Math.min(vh, vw)}px`);
-});
-
-hamburger.addEventListener('mousedown', () => {
-    toggleNav();
 });
 
 function OnError(message) {
