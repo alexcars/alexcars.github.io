@@ -12,5 +12,25 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #cccccccc;
+    background-color: #1e2a307d;
+}
+
+#nav-container {
+    background-color: #1e2a30cc;
+    backdrop-filter: blur(20px);
+    border-color: #0000007d;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+    position: fixed;
+    left: calc(var(--vw,1vw) * -31);
+    width: calc(var(--vw,1vw) * 30);
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+#hamburger {
+    position: relative;
+    left: calc(var(--vw,1vw) * 32);
+    top: calc(var(--vh, 1vh) * 1);
+    color: #1e2a70;
 }
