@@ -54,6 +54,11 @@ body {
     left: calc(var(--vw,1vw) * 32);
     top: calc(var(--vh, 1vh) * 1);
     color: #1e2a70;
+    
+    padding-top: calc(var(--vh, 1vh) * 2);
+    padding-bottom: calc(var(--vh, 1vh) * 2);
+    width: fit-content;
+    font-size: calc(var(--vwh, 1vh) * 4);
 }
 
 #hamburger:hover {
