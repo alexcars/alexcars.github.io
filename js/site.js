@@ -7,6 +7,7 @@ let navActive = false;
 
 /* Navbar variables */
 let navCon = document.getElementById("nav-container");
+let hamburger = document.getElementById("hamburger");
 
 /* Functions */
 function hashString(str) {
@@ -63,6 +64,10 @@ window.addEventListener('resize', () => {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
     document.documentElement.style.setProperty('--vw', `${vw}px`);
     document.documentElement.style.setProperty('--vwh', `${Math.min(vh, vw)}px`);
+});
+
+hamburger.addEventListener('mousedown', () => {
+    toggleNav();
 });
 
 setActive().catch(console.log);
