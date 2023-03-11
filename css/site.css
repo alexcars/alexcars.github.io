@@ -36,6 +36,19 @@ body {
     height: calc(var(--vh, 1vh) * 100);
 }
 
+#nav-container-active {
+    background-color: #1e2a30cc;
+    backdrop-filter: blur(20px);
+    border-color: #0000007d;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+    position: fixed;
+    left: calc(var(--vw,1vw) * 0);
+    width: calc(var(--vw,1vw) * 30);
+    height: calc(var(--vh, 1vh) * 100);
+}
+
 #hamburger {
     position: relative;
     left: calc(var(--vw,1vw) * 32);
