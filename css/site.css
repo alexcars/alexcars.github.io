@@ -55,3 +55,7 @@ body {
     top: calc(var(--vh, 1vh) * 1);
     color: #1e2a70;
 }
+
+#hamburger:hover {
+    cursor: pointer;
+}
